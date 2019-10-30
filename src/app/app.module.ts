@@ -20,11 +20,11 @@ import { ProductListComponent } from './product-list/product-list.component';
 
 import { RouterModule, Routes} from '@angular/router';
 
-export const appRoutes:Routes=[
-  {path: 'products' , component: ProductListComponent},
-  {path: 'proudcts/:id', component: ProductPageComponent},
-  {path: ' ', redirectTo: "./products", pathMatch: "full"}
-]
+ const appRoutes:Routes = [
+  { path: 'products', component: ProductListComponent},
+  { path: 'proudcts/:id', component: ProductPageComponent},
+  { path: ' ', redirectTo: "./products", pathMatch: "full"}
+];
 
 
 @NgModule({
